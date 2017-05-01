@@ -38,7 +38,7 @@ namespace MyNamespace
             // For more: http://referencesource.microsoft.com/#System/net/System/Net/WebUtility.cs,117
             // Example ¢ is converted to &#162; by the framework,  we must convert it into &cent; instead.
             StringWriter writer = new StringWriter(CultureInfo.InvariantCulture);
-            HtmlEncode(value, writer);
+            HtmlEncode(output, writer);
             return writer.ToString();
         }
 
